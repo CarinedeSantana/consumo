@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções para os problemas citados</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="idea_1103359.png" type="image/png">
+
+    <style>
+  
+        .conteudo {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .texto {
+            flex: 5;
+        }
+
+        .imagem {
+            flex: 1;
+            display: flex;
+            justify-content: end;
+        }
+
+        .imagem img {
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding-left: 20px;
+            position: relative;
+            color: #ffffff;
+            line-height: 1.5;
+            text-align: left;
+            margin: 10px 20px;
+            max-width: 900px;
+        }
+
+        li::before {
+            content: "✔️"; 
+            position: auto;
+            left: 0;
+            font-size: 1.9em; 
+        }
+
+        ul ul {
+            color: #ffffff;
+            font-size:17px;
+            padding: 20px;
+            border-radius: 0px;
+            text-align: center;
+            background-color: rgba(5, 75, 16, 0.4);
+            max-width: 1500px;
+            margin: 10px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        body {
+            font-family: 'Libre Baskerville', serif;
+            margin: 0;
+            background-color: #000;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("soliman-cifuentes-K8QraCiuUGI-unsplash.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 47px;
+            padding: 20px;
+            border-radius: 0px;
+            text-align: center;
+            background-color: rgba(1, 61, 14, 0.8);
+            max-width: 1500px;
+            margin: 10px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 55px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: rgb(4, 63, 19);
+        }
+
+        p {
+            color: #fafafa;
+            border-radius: 10px;
+            line-height: 1.5;
+            text-align: left;
+            margin: 10px 20px;
+            max-width: 900px;
+            padding: 15px;
+            text-decoration: underline;
+        }
+
+        /* Estilos para tabela comparativa */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: rgba(5, 75, 16, 0.4);
+        }
+
+        th, td {
+            border: 1px solid #9fff9f;
+            padding: 12px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        th {
+            background-color: rgba(1, 61, 14, 0.8);
+        }
+        /* Linhas ímpares */
+        #tabela-solucoes tbody tr:nth-child(odd) {
+            background-color: rgba(119, 226, 135, 0.4); /* verde mais claro */
+        }
+
+        /* Linhas pares */
+        #tabela-solucoes tbody tr:nth-child(even) {
+            background-color: rgba(0, 92, 20, 0.6); /* verde mais escuro */
+        }
+
+        blockquote {
+            border-left: 5px solid #9fff9f;
+            margin: 20px;
+            padding-left: 15px;
+            color: #fafafa;
+            font-style: italic;
+            background-color: rgba(1, 61, 14, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="content" id="principal">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="problemas.html">Problemas</a>
+            <a href="solucoes.html">Soluções</a>                                                
+            <a href="estatisticas.html">Estatísticas</a>
+            <a href="acoes.html">Ações</a>
+        </nav>
+
+        <h1 id="titulo-solucoes">Soluções para os Problemas</h1>
+
+        <blockquote>
+            "A sustentabilidade não é uma moda, é uma necessidade para garantir qualidade de vida para as futuras gerações." <em>Maria Silva, especialista em economia sustentável.</em>
+        </blockquote>
+            <ul>
+                <li>Obsolescência Programada e Percebida</li>
+                <li>Apatia do Consumidor</li>
+                <li>Acesso e Custo</li>
+                <li>Falta de Transparência e Greenwashing</li>
+                <li>Pressão Social e Status</li>
+            </ul>
+        </div>
+
+        <!-- Tabela comparativa de soluções -->
+        <table id="tabela-solucoes">
+            <thead>
+                <tr>
+                    <th>Problema</th>
+                    <th>Consumo</th>
+                    <th>Empresas</th>
+                    <th>Governo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Obsolescência Programada</td>
+                    <td>Comprar produtos duráveis, apoiar reparos</td>
+                    <td>Projetar produtos duráveis, modelo de aluguel</td>
+                    <td>Regulamentar peças de reposição, incentivar economia circular</td>
+                </tr>
+                <tr>
+                    <td>Apatia do Consumidor</td>
+                    <td>Buscar informação, pequenas mudanças</td>
+                    <td>Transparência e educação do consumidor</td>
+                    <td>Educação ambiental, incentivos para energias renováveis</td>
+                </tr>
+                <tr>
+                    <td>Acesso e Custo</td>
+                    <td>Feiras locais, comércio justo</td>
+                    <td>Reduzir custos, oferecer opções acessíveis</td>
+                    <td>Incentivos fiscais, reduzir impostos sobre produtos sustentáveis</td>
+                </tr>
+                <tr>
+                    <td>Greenwashing</td>
+                    <td>Pesquisar certificações confiáveis</td>
+                    <td>Adotar certificações e relatórios detalhados</td>
+                    <td>Fortalecer fiscalização, criar leis mais rigorosas</td>
+                </tr>
+                <tr>
+                    <td>Pressão Social e Status</td>
+                    <td>Valorizar experiências, compartilhar consumo consciente</td>
+                    <td>Associar marca a propósito, não status</td>
+                    <td>Campanhas de conscientização, redefinir sucesso e felicidade</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Para mais informações sobre práticas sustentáveis, visite <a href="https://www.wwf.org.br/" target="_blank" style="color: #00f000;; text-decoration:underline;">WWF Brasil</a>.</p>
+
+    </div>
+</body>
+</html>

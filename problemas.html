@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="idea_1103359.png" type="image/png">
+
+
+    <style>
+        ul {
+    list-style-type: none; /* Remove o marcador padrão da lista */
+    padding-left: 0; /* Remove o espaçamento padrão da lista */
+  }
+
+  li {
+    padding-left: 20px; /* Adiciona um espaço para o nosso marcador 'X' */
+    position: relative;
+  }
+
+  li::before {
+    content: "❌"; /* Caractere 'X' */
+    position: absolute;
+    left: 0;
+    font-size: 1.9em; /* Tamanho do 'X'  */
+  }
+        /* Estilos globais */
+        body {
+            font-family: 'Libre Baskerville', serif;
+            margin: 0;
+            background-color: #012c13; /* Cor de fallback caso a imagem não carregue */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("soliman-cifuentes-K8QraCiuUGI-unsplash.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        /* Container principal para o conteúdo, garantindo que ele fique acima do fundo desfocado */
+        .content {
+            position: relative;
+            z-index: 1; /* Garante que o conteúdo fique na frente do fundo */
+            padding: 20px;
+        }
+
+        /* Estilo do título */
+        h1 {
+            color: #ffffff;
+            font-size: 47px;
+            padding: 20px;
+            border-radius: 0px;
+            text-align: center;
+            background-color: rgba(1, 61, 14, 0.8);
+            max-width: 1500px;
+            margin: 10px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Estilo da barra de navegação */
+        nav {
+            text-align: center;
+            padding: 10px 0; 
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 55px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: rgb(4, 63, 19);
+        }
+
+        /* Estilo dos parágrafos */
+        p {
+            color: #fafafa;
+            border-radius: 10px;
+            line-height: 1.5; /* Aumentado para melhorar a leitura */
+            text-align: left;
+            margin: 10px 20px 10px 20px; /* 10px em cima e embaixo, 20px nas laterais */
+            max-width: 900px;
+            background-color: rgba(5, 75, 16, 0.4); /* Fundo semi-transparente para o texto */
+            padding: 15px; /* Adicionado padding para o texto não encostar nas bordas */
+        }
+       .problema-flex {
+            display: flex; /* Coloca imagem e texto na mesma linha */
+             align-items: flex-start; /* Alinha pelo topo */
+             gap: 15px; /* Espaço entre a imagem e o texto */  
+         }
+
+         .imagem-problema {
+             width: 150px; /* Ajuste conforme necessário */
+            height: auto;
+         }
+
+        /* Novos estilos para alinhar a imagem à direita e diminuir o tamanho */
+        .texto-imagem {
+            display: flex;
+            flex-direction: row-reverse; /* Inverte a ordem para a imagem ir para a direita */
+            align-items: flex-start; /* Alinha os itens ao topo */
+            gap: 20px; /* Espaço entre a imagem e a lista */
+            margin: 20px; /* Adiciona um pouco de margem ao redor */
+        }
+        .bloco-imagens { /* Container para todas as três imagens */
+            display: flex;
+            flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+            gap: 15px; /* Espaço entre as imagens */
+            max-width: 40%; /* Ajuste a largura total do bloco de imagens conforme necessário */
+            /* Se diminuir esta largura, o texto ganha mais espaço. */
+            /* Se aumentar, as imagens podem ficar mais largas ou tentar encaixar mais na linha. */
+        }
+
+        .bloco-imagens img {
+            width: calc(50% - 7.5px); /* Calcula a largura para duas imagens */
+            /* 50% para duas imagens por linha, menos metade para cada lado */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .bloco-imagens img:last-child {
+            width: 100%; /* Faz a última imagem ocupar a largura total do bloco de imagens */
+        }
+
+        .texto-imagem img {
+            max-width: 30%;/*Diminui o tamanho da imagem, tornando-a responsiva */
+            height: auto;
+            border-radius: 10px; /* Opcional: para manter o estilo da imagem */
+        }
+
+        .texto-imagem ul {
+            flex: 1; /* Permite que a lista ocupe o espaço restante */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="content">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="problemas.html">Problemas</a>
+            <a href="solucoes.html">Soluções</a>
+            <a href="estatisticas.html">Estatísticas</a>
+            <a href="acoes.html">Ações</a>
+        </nav>
+
+        <h1>Problemas</h1>
+        
+        <p>A mudança para um modelo mais sustentável enfrenta uma série de obstáculos. Alguns dos principais problemas incluem:</p>
+        
+        <div class="texto-imagem">
+            <img src="imagem.png" alt="Imagem ilustrativa">
+            <img src="img2.png" alt="Segunda imagem ilustrativa">
+            
+        <ul>
+            <li>
+                <p><strong>Obsolescência Programada e Percebida:</strong> Produtos são projetados para ter uma vida útil limitada (obsolescência programada) ou são substituídos por modelos mais recentes, mesmo estando em perfeito estado (obsolescência percebida). Isso aumenta a produção de lixo e a exploração de recursos.</p>
+            </li>
+            <li>
+           
+                <p><strong>Apatia do Consumidor:</strong> Muitas pessoas não se sentem responsáveis ou capazes de fazer a diferença. A falta de conhecimento sobre os impactos de suas escolhas e a percepção de que a mudança individual é insignificante contribuem para a inércia.</p>
+            </li>
+            <li>    
+                <p><strong>Acesso e Custo:</strong> Produtos e serviços sustentáveis muitas vezes são mais caros ou difíceis de encontrar. Isso cria uma barreira econômica, tornando a opção sustentável um privilégio para poucos e não uma escolha acessível a todos.</p>
+           
+            </li>
+            <li>
+                <p><strong>Falta de Transparência e Greenwashing:</strong> Empresas usam a sustentabilidade como estratégia de marketing, sem adotar práticas realmente sustentáveis. O greenwashing confunde o consumidor e mina a confiança nas marcas, dificultando a identificação de produtos verdadeiramente ecológicos.</p>
+            </li>
+            <li>
+                <p><strong>Pressão Social e Status:</strong> A sociedade muitas vezes associa a felicidade e o sucesso à posse de bens materiais. Essa pressão cultural leva ao consumismo excessivo, onde o "ter" é mais valorizado do que o "ser".</p>
+            </li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>
